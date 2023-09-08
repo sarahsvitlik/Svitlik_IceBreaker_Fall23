@@ -16,6 +16,10 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+    //Enable binding to link kt to xml
+    buildFeatures {
+       viewBinding = true
+    }
 
     buildTypes {
         release {

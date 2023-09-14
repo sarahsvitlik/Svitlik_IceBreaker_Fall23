@@ -14,6 +14,6 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.textView.text= "Hey hey hey!!!"
+        binding.textView.text= "IceBreaker!!!"
     }
 }

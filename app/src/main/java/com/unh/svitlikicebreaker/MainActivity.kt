@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
     private val binding: ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
     private val TAG = "IcebreakerAndroidF23Tag"
 
-    
+
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d(TAG, msg:"Entered into OnCreate"
         super.onCreate(savedInstanceState)
@@ -18,13 +18,14 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        binding.ButtonGetQuestion.setOnClickListener {
+        binding.ButtonGetQuestion.setOnClickListener {//container for actions when getQuestions is pressed
             Log.d(TAG, msg:"Button GetQuestion was pressed")
+            getQuestionsfromFirebase()
         }
     }
 
-    override
 
-
+    private fun getQuestionsfromFirebase (){
+    Log.d(TAG, msg:"Fetching questions from databse")
+    binding.txtAnswer.setText("~doing db stuff~")
 }
-

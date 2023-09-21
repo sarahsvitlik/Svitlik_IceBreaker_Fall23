@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             getQuestionsfromFirebase()
         }
 
+        //linked ui to code
         //links value
         binding.ButtonSubmit.setOnClickListener {//container for actions when submit is pressed
          Log.d(TAG, "Submit button was pressed.")

@@ -1,5 +1,7 @@
 # Copy this text to your .gitignore file to your android project prior to your initial commit. 
 
+google-services.json
+
 # Built application files
 *.apk
 *.aar
